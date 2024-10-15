@@ -1,0 +1,67 @@
+.main{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;   
+}
+
+.review-form{
+
+}
+
+
+
+@media only screen and (max-width : 768px) {
+    .main{
+        background-color: blue;
+    }
+
+    .review-form{
+        height: 100vh;
+        width: 95%;
+        background-color: rgb(255, 255, 255);
+        position:relative;
+        left: 2.5%;
+        top: 2%;
+        border: #000000 1px solid;
+        border-radius: 20px;
+    }
+    .main-form{
+        padding: 5%;
+    }
+    
+    .logo{
+        height: 6rem;
+        width: 13rem;
+        margin-left:35%;
+    }
+
+    
+        .inputbox {
+            background-color: rgba(248, 248, 248, 0.3);
+            box-sizing: 1rem;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            width: 90%;
+          }
+          
+
+
+    .head-info{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .flexdefault{
+        display:flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Review Form with Multiple Factors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="review-form">
+            <div class="main-form">
+                <img src="/asset/Hotel-Vellore-Logo.png" alt="Logo" class="logo">
+                <form action="submit_review.php" method="POST">
+                    <!-- <label for="name">Name:</label> -->
+                    <div class="head-info">
+                        <input class="inputbox" type="text" id="name" name="name" placeholder="Name" required>
+                        <input class="inputbox" type="text" id="phone" name="phone" placeholder="phone" required>
+
+                        <!-- <label for="email">Email:</label> -->
+                        <input class="inputbox" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="inputbox" type="text" id="room" name="room" placeholder="Room No" required>
+                    </div>
+                    <!-- Front Office Rating -->
+                    <label for="front-office">FRONT OFFICE</label>
+
+                    <div class="star-rating">
+
+                        <div class="ambience flexdefault">
+                            <div>
+                                <label for="Ambience">Decor / Ambience :</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="front3" name="Ambience=" 3" />
+                                <label for="front3" title="3 stars">&#9733;</label>
+                                <input type="radio" id="front2" name="Ambience" value="2" />
+                                <label for="front2" title="2 stars">&#9733;</label>
+                                <input type="radio" id="front1" name="Ambience" value="1" />
+                                <label for="front1" title="1 star">&#9733;</label>
+                            </div>
+                        </div>
+
+                        <div class="check-in-out flexdefault">
+                            <div>
+                                <label for="Ambience">Check in / Check out :</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="front3" name="Ambience=" 3" />
+                                <label for="front3" title="3 stars">&#9733;</label>
+                                <input type="radio" id="front2" name="Ambience" value="2" />
+                                <label for="front2" title="2 stars">&#9733;</label>
+                                <input type="radio" id="front1" name="Ambience" value="1" />
+                                <label for="front1" title="1 star">&#9733;</label>
+                            </div>
+                        </div>
+
+                        <div class="reservation flexdefault">
+                            <div>
+                                <label for="Ambience">Reservation :</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="front3" name="Ambience=" 3" />
+                                <label for="front3" title="3 stars">&#9733;</label>
+                                <input type="radio" id="front2" name="Ambience" value="2" />
+                                <label for="front2" title="2 stars">&#9733;</label>
+                                <input type="radio" id="front1" name="Ambience" value="1" />
+                                <label for="front1" title="1 star">&#9733;</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Housekeeping Rating -->
+                    <label for="housekeeping">Housekeeping:</label>
+                    <div class="star-rating">
+
+                        <input type="radio" id="house3" name="housekeeping_rating" value="3" />
+                        <label for="house3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="house2" name="housekeeping_rating" value="2" />
+                        <label for="house2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="house1" name="housekeeping_rating" value="1" />
+                        <label for="house1" title="1 star">&#9733;</label>
+                    </div>
+
+                    <!-- Food Rating -->
+                    <label for="food">Food:</label>
+                    <div class="star-rating">
+
+                        <input type="radio" id="food3" name="food_rating" value="3" />
+                        <label for="food3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="food2" name="food_rating" value="2" />
+                        <label for="food2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="food1" name="food_rating" value="1" />
+                        <label for="food1" title="1 star">&#9733;</label>
+                    </div>
+
+                    <!-- Quality Rating -->
+                    <label for="quality">Quality:</label>
+                    <div class="star-rating">
+
+                        <input type="radio" id="quality3" name="quality_rating" value="3" />
+                        <label for="quality3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="quality2" name="quality_rating" value="2" />
+                        <label for="quality2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="quality1" name="quality_rating" value="1" />
+                        <label for="quality1" title="1 star">&#9733;</label>
+                    </div>
+
+                    <!-- Service Rating -->
+                    <label for="service">Service:</label>
+                    <div class="star-rating">
+
+                        <input type="radio" id="service3" name="service_rating" value="3" />
+                        <label for="service3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="service2" name="service_rating" value="2" />
+                        <label for="service2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="service1" name="service_rating" value="1" />
+                        <label for="service1" title="1 star">&#9733;</label>
+                    </div>
+
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
