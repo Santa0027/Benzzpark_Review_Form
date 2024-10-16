@@ -14,11 +14,11 @@
 
 @media only screen and (max-width : 768px) {
     .main{
-        background-color: blue;
+        background-color: rgb(76, 191, 226);
     }
 
     .review-form{
-        height: 100vh;
+        height: 95vh;
         width: 95%;
         background-color: rgb(255, 255, 255);
         position:relative;
@@ -60,8 +60,317 @@
     }
 
     .flexdefault{
-        display:flex;
+        display:flex;   
         flex-direction: row;
-        gap: 2rem;
+        justify-content:space-between;
+        align-items: center;
+        margin-right: 10rem;
     }
+
+    .front-title{
+        color: rgb(5, 129, 245);
+        font-size: 1.2rem;
+        position: absolute;
+        left: 40%;
+    }
+    .star-rating{
+        width: 80%;
+        margin-top: 2rem;
+        padding-left: 26%;
+        font-size: large;
+        margin-bottom: 2%;
+        
+
+    }
+
+    .star {
+        font-size: 30px;
+        color: #ddd;
+        cursor: pointer;
+    }
+
+    input[type="radio"] {
+        display: none;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    input[type="radio"]:checked ~ .star {
+        color: gold;
+    }
+
+    /* .flexdefault{
+        height: auto;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .housekeeping{
+        color: rgb(4, 97, 236);
+        margin-left: 39%;
+        
+    }
+
+    .row2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .row2c1{
+        width: 40%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .Cleanliness{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Decor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Air-Condition{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .row2c2{
+        width: 40%;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .Supplies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Comfort{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Fittings{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .food-beverage{
+        color: rgb(14, 159, 243);
+        margin-left:40%;
+        margin-top: 2rem;
+    }
+
+    .food-beverage-rating{
+        display: flex;
+        flex-direction: row;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        padding-left: 0.6rem;
+        /* gap: 2rem; */
+        
+    }
+    
+    .Food{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 35%;
+    }
+
+    .Quality{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 35%;
+    }
+
+    .service{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 40%;
+    }
+    .choose-our-hotel {
+        margin-top: 1rem;
+        margin-bottom: 1rem; /* Space below this section */
+    }
+    
+    .choice {
+        display: flex;
+        flex-direction: row; /* Stack radio buttons vertically */
+        justify-content:space-around ;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .choice input[type="radio"] {
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 10px; /* Space between the button and label */
+        cursor: pointer; /* Pointer cursor for better UX */
+    }
+    
+    .flexchoice1{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        gap: 1rem;
+    }
+
+    .flexchoice2{
+
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        gap: 1rem;
+
+    }
+
+    .flex1{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .choose{
+        color: rgb(0, 140, 255);
+        margin-left: 26%;
+        margin-bottom: 1rem;
+    }
+
+    .purpose{
+        color: rgb(0, 140, 255);
+        margin-left: 30%;
+        
+
+    }
+
+    .purpose-of-stay input[type="radio"] {
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 10px; /* Space between the button and label */
+        cursor: pointer; /* Pointer cursor for better UX */
+    }
+
+    .purpose-of-stay{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .impression{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 1.5rem;
+
+    }
+
+    .feedback-textarea{
+        margin-top: 2rem;
+        background-color: rgb(220, 230, 230);
+        border-radius: 20px;
+     
+    }
+
+    .submitbtn{
+        color: aliceblue;
+        border: #000000 1px solid;
+        border-radius: 15px;
+    }
+
+
+    /* CSS */
+    .submitbtn {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-left: 4rem;
+    margin-bottom: 9rem;
+    }
+
+    .button-18:hover,
+    .button-18:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+    }
+
+    .button-18:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+    }
+
+    .button-18:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+    }
+
+  
+    
+
+    
+
+
 }
