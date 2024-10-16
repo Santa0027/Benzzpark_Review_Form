@@ -74,11 +74,11 @@
         left: 40%;
     }
     .star-rating{
-        width: 80%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
         margin-top: 2rem;
-        padding-left: 26%;
-        font-size: large;
-        margin-bottom: 2%;
+       
         
 
     }
@@ -99,12 +99,17 @@
         color: gold;
     }
 
-    /* .flexdefault{
+    .flexdefault{
         height: auto;
         width: 80%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-    } */
+    }
+
+    .firsthalf{
+        width: 40%;
+
+    }
 
     .housekeeping{
         color: rgb(4, 97, 236);
@@ -181,45 +186,60 @@
         align-items: center;
         flex-wrap: wrap;
     }
-
+/* 
     .food-beverage{
         color: rgb(14, 159, 243);
         margin-left:40%;
         margin-top: 2rem;
-    }
+    }  */
 
-    .food-beverage-rating{
+     /* .food-beverage-rating{
         display: flex;
         flex-direction: row;
+        width: 50%;
         height: 2.5rem;
         margin-top: 0.5rem;
         padding-left: 0.6rem;
-        /* gap: 2rem; */
+        gap: 2rem;
         
+    }  */
+
+    .row3{
+        width: 50%;
+    }
+
+    .food-beverage-rating{
+        width: 50%;
+        padding-left: 4rem;
+
+
     }
     
     .Food{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         gap: 1rem;
-        width: 35%;
+        
     }
 
     .Quality{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         gap: 1rem;
-        width: 35%;
+        
     }
 
     .service{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         gap: 1rem;
-        width: 40%;
+        
     }
     .choose-our-hotel {
         margin-top: 1rem;
