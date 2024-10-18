@@ -13,15 +13,15 @@
         <div class="review-form">
             <div class="main-form">
                 <img src="/asset/Hotel-Vellore-Logo.png" alt="Logo" class="logo">
-                <form action="submit_review.php" method="POST">
+                <form id="myform" action="index.php" method="POST">
                     <!-- <label for="name">Name:</label> -->
                     <div class="head-info">
-                        <input class="inputbox" type="text" id="name" name="name" placeholder="Name" required>
-                        <input class="inputbox" type="text" id="phone" name="phone" placeholder="phone" required>
+                        <input class="inputbox" type="text" id="name" name="gname" placeholder="Name" required>
+                        <input class="inputbox" type="text" id="phone" name="gphone" placeholder="phone" required>
 
                         <!-- <label for="email">Email:</label> -->
-                        <input class="inputbox" type="email" id="email" name="email" placeholder="Email" required>
-                        <input class="inputbox" type="text" id="room" name="room" placeholder="Room No" required>
+                        <input class="inputbox" type="email" id="email" name="gemail" placeholder="Email" required>
+                        <input class="inputbox" type="text" id="room" name="groom" placeholder="Room No" required>
                     </div>
                     <!-- Front Office Rating -->
                     <label class="front-title" for="front-office">FRONT OFFICE</label>
@@ -164,16 +164,16 @@
                                 </div>
                             </div>
 
-                            <div class=" Air-Condition">
+                            <div class=" Air_Condition">
                                 <div>
-                                    <label for=" Air-Condition">Air-Condition :</label>
+                                    <label for=" Air_Condition">Air-Condition :</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id=" Air-Condition3" name=" Air-Condition" value="3" />
+                                    <input type="radio" id=" Air-Condition3" name=" Air_Condition" value="3" />
                                     <label for=" Air-Condition3" title="3 stars" class="star">&#9733;</label>
-                                    <input type="radio" id=" Air-Condition2" name=" Air-Condition" value="2" />
+                                    <input type="radio" id=" Air-Condition2" name=" Air_Condition" value="2" />
                                     <label for=" Air-Condition2" title="2 stars" class="star">&#9733;</label>
-                                    <input type="radio" id=" Air-Condition1" name=" Air-Condition" value="1" />
+                                    <input type="radio" id=" Air-Condition1" name=" Air_Condition" value="1" />
                                     <label for=" Air-Condition1" title="1 star" class="star">&#9733;</label>
                                 </div>
                             </div>
@@ -271,17 +271,17 @@
                         <div class="purpose-of-stay">
 
                             <div class="flex1">
-                                <input type="radio" id="choice0" name="purpose1" value="Business" />
+                                <input type="radio" id="choice0" name="purpose" value="Business" />
                                 <label for="purpose1">Business</label>
                             </div>
 
                             <div class="flex1">
-                                <input type="radio" id="choice0" name="purpose2" value="Pleasure" />
+                                <input type="radio" id="choice0" name="purpose" value="Pleasure" />
                                 <label for="purpose2">Pleasure</label>
                             </div>
 
                             <div class="flex1">
-                                <input type="radio" id="choice0" name="purpose3" value="Others" />
+                                <input type="radio" id="choice0" name="purpose" value="Others" />
                                 <label for="purpose3">Others</label>
                             </div>
 
@@ -339,7 +339,13 @@
 
                         </div>
                         <div class="submitdiv">
-                            <span><button type="button" name="Submit" class="submitbtn">Submit</button></span>
+                            <div id="response"></div>
+
+                            <div id="loading" style="display:none;">
+                                <div class="spinner"></div>
+                                Loading...
+                            </div>
+                            <span><button type="submit" name="Submit" class="submitbtn">Submit</button></span>
                         </div>
 
                     </div>
@@ -347,8 +353,9 @@
 
 
 
-
                 </form>
+
+
             </div>
         </div>
     </div>
