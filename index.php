@@ -185,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare the statement
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sisiiiiiiiiiiiiiiis", $name, $phone, $email, $room, $ambience, $checkinout, $reservation, $food, $quality, $service, $cleanliness, $decor, $air_condition, $supplies, $comfort, $fittings, $choice, $purpose, $feedback);
+    $stmt->bind_param("sisiiiiiiiiiiiiisss", $name, $phone, $email, $room, $ambience, $checkinout, $reservation, $food, $quality, $service, $cleanliness, $decor, $air_condition, $supplies, $comfort, $fittings, $choice, $purpose, $feedback);
 
     // Execute and check if successful
     if ($stmt->execute()) {

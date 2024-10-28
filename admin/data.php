@@ -3,13 +3,6 @@ include 'config.php';
 
 
 
-session_start(); // Start the session
-if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: index.php'); // Redirect to login if not logged in
-    exit();
-}
-
-
 // Helper function to generate star ratings with filled/unfilled star classes
 function displayStars($rating) {
     $stars = "";
@@ -103,7 +96,7 @@ $result = $conn->query($sql);
 <?php
 if ($result->num_rows > 0) {
     echo "<div class='main'>
-            <img src='/asset/Hotel-Vellore-Logo.png' alt='Logo' class='logo'>
+            <img src='logo.png' alt='Logo' class='logo'>
             <table class='table-review'>
                 <thead>
                     <tr>
@@ -150,7 +143,7 @@ if ($result->num_rows > 0) {
                 <td>" . displayStars($row['comfort']) . "</td>
                 <td>" . displayStars($row['fittings']) . "</td>
                 <td>" . displayStars($row['choice']) . "</td>
-                <td>" . displayStars($row['purpose']) . "</td>
+                <td>" . $row['purpose']. "</td>
                 <td>{$row['feedback']}</td>
                 <td class='submission-date'>{$row['submission_date']}</td>
               </tr>";

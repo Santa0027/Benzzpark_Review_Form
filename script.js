@@ -23,3 +23,22 @@ const form = document.getElementById('myform').addEventListener('submit', functi
 
     xhr.send(formData); // Send the form data
 });
+
+
+const stars = document.querySelectorAll('.star');
+const radios = document.querySelectorAll('input[type="radio"]');
+
+radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+        // Remove 'checked' class from all stars
+        stars.forEach(star => {
+            star.classList.remove('checked');
+        });
+
+        // Add 'checked' class to the stars based on the selected radio button
+        const index = Array.from(radios).indexOf(radio);
+        for (let i = 0; i <= index; i++) {
+            stars[i].classList.add('checked');
+        }
+    });
+});

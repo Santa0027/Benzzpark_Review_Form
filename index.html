@@ -12,27 +12,29 @@
     <div class="main">
         <div class="review-form">
             <div class="main-form">
-                <img src="/asset/Hotel-Vellore-Logo.png" alt="Logo" class="logo">
+                <img src="Hotel-Vellore-Logo.png" alt="Logo" class="logo">
                 <form id="myform" action="index.php" method="POST">
                     <!-- <label for="name">Name:</label> -->
                     <div class="head-info">
                         <input class="inputbox" type="text" id="name" name="gname" placeholder="Name" required>
-                        <input class="inputbox" type="text" id="phone" name="gphone" placeholder="phone" required>
-
+                        <input class="inputbox" type="text" id="room" name="groom" placeholder="Room No" required>
+                    
+                   
                         <!-- <label for="email">Email:</label> -->
                         <input class="inputbox" type="email" id="email" name="gemail" placeholder="Email" required>
-                        <input class="inputbox" type="text" id="room" name="groom" placeholder="Room No" required>
+                    <input class="inputbox" type="text" id="phone" name="gphone" placeholder="phone" required>
                     </div>
                     <!-- Front Office Rating -->
-                    <label class="front-title" for="front-office">FRONT OFFICE</label>
+                    
 
                     <div class="star-rating">
                         <div class="firsthalf">
+                            <label class="front-title" for="front-office">FRONT OFFICE</label>
                             <div class="ambience flexdefault">
                                 <div>
                                     <label for="ambience">Decor / Ambience :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input class="radiobtn" type="radio" id="ambience3" name="ambience" value="3" />
                                     <label for="ambience3" title="3 stars" class="star">&#9733;</label>
                                     <input class="radiobtn" type="radio" id="ambience2" name="ambience" value="2" />
@@ -46,7 +48,7 @@
                                 <div>
                                     <label for="checkinout">Check in / Check out :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input type="radio" id="checkinout3" name="checkinout" value="3" />
                                     <label for="checkinout3" title="3 stars" class="star">&#9733;</label>
                                     <input type="radio" id="checkinout2" name="checkinout" value="2" />
@@ -60,7 +62,7 @@
                                 <div>
                                     <label for="Ambience">Reservation :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input type="radio" id="reservation3" name="reservation" value="3" />
                                     <label for="reservation3" title="3 stars" class="star">&#9733;</label>
                                     <input type="radio" id="reservation2" name="reservation" value="2" />
@@ -77,11 +79,12 @@
                         <div class="row3">
 
                             <div class="food-beverage-rating">
+                                <label class="front-title" for="front-office">FOOD AND BEVERAGE</label>
                                 <div class="Food beverageflexdefault">
                                     <div>
                                         <label for="Food">Food :</label>
                                     </div>
-                                    <div>
+                                    <div class="rowre">
                                         <input type="radio" id="food3" name="food" value="3" />
                                         <label for="food3" title="3 stars" class="star">&#9733;</label>
                                         <input type="radio" id="food2" name="food" value="2" />
@@ -95,7 +98,7 @@
                                     <div>
                                         <label for="Quality"> Quality :</label>
                                     </div>
-                                    <div>
+                                    <div class="rowre">
                                         <input type="radio" id="Quality3" name="Quality" value="3" />
                                         <label for="Quality3" title="3 stars" class="star">&#9733;</label>
                                         <input type="radio" id="Quality2" name="Quality" value="2" />
@@ -109,7 +112,7 @@
                                     <div>
                                         <label for="Service">Service :</label>
                                     </div>
-                                    <div>
+                                    <div class="rowre">
                                         <input type="radio" id=" Service3" name=" Service" value="3" />
                                         <label for=" Service3" title="3 stars" class="star">&#9733;</label>
                                         <input type="radio" id=" Service2" name=" Service" value="2" />
@@ -137,7 +140,7 @@
                                 <div>
                                     <label for="Cleanliness">Cleanliness :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input class="radiobtn" type="radio" id="Cleanliness3" name="Cleanliness"
                                         value="3" />
                                     <label for="Cleanliness3" title="3 stars" class="star">&#9733;</label>
@@ -154,7 +157,7 @@
                                 <div>
                                     <label for="Decor"> Decor :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input type="radio" id="Decor" name="Decor" value="3" />
                                     <label for="Decor3" title="3 stars" class="star">&#9733;</label>
                                     <input type="radio" id="Decor2" name="Decor" value="2" />
@@ -168,7 +171,7 @@
                                 <div>
                                     <label for=" Air_Condition">Air-Condition :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input type="radio" id=" Air-Condition3" name=" Air_Condition" value="3" />
                                     <label for=" Air-Condition3" title="3 stars" class="star">&#9733;</label>
                                     <input type="radio" id=" Air-Condition2" name=" Air_Condition" value="2" />
@@ -187,7 +190,7 @@
                                 <div>
                                     <label for="Supplies">Supplies :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input class="radiobtn" type="radio" id="Supplies3" name="Supplies" value="3" />
                                     <label for="Supplies3" title="3 stars" class="star">&#9733;</label>
                                     <input class="radiobtn" type="radio" id="Supplies2" name="Supplies" value="2" />
@@ -201,13 +204,13 @@
                                 <div>
                                     <label for="Comfort"> Comfort :</label>
                                 </div>
-                                <div>
-                                    <input type="radio" id="Comfort" name="Comfort" value="3" />
-                                    <label for="Comfort3" title="3 stars" class="star">&#9733;</label>
+                                <div class="rowre">
+                                    <input type="radio" id="Comfort1" name="Comfort" value="1" />
+                                    <label for="Comfort1" title="1 stars" class="star">&#9733;</label>
                                     <input type="radio" id="Comfort2" name="Comfort" value="2" />
                                     <label for="Comfort2" title="2 stars" class="star">&#9733;</label>
-                                    <input type="radio" id="Comfort1" name="Comfort" value="1" />
-                                    <label for="Comfort1" title="1 star" class="star">&#9733;</label>
+                                    <input type="radio" id="Comfort3" name="Comfort" value="3" />
+                                    <label for="Comfort3" title="3 stars" class="star">&#9733;</label>
                                 </div>
                             </div>
 
@@ -215,7 +218,7 @@
                                 <div>
                                     <label for="Fittings">Fittings :</label>
                                 </div>
-                                <div>
+                                <div class="rowre">
                                     <input type="radio" id="Fittings3" name="Fittings" value="3" />
                                     <label for="Fittings3" title="3 stars" class="star">&#9733;</label>
                                     <input type="radio" id="Fittings2" name="Fittings" value="2" />
@@ -319,21 +322,21 @@
 
                             </div>
 
-                            <div class="1star">
+                            <div class="star1">
                                 <div>
-                                    <label class="review-star">&#9733;</label>
-                                    <label class="star">&#9733;</label>
-                                    <label class="star">&#9733;</label>
+                                    <label class="demostar">&#9733;</label>
+                                    <label class="demostar">&#9733;</label>
+                                    <label class="demostar">&#9733;</label>
                                 </div>
                                 <div>
-                                    <label class="review-star">&#9733;</label>
-                                    <label class="review-star">&#9733;</label>
-                                    <label class="star">&#9733;</label>
+                                    <label class="colrstar">&#9733;</label>
+                                    <label class="colrstar">&#9733;</label>
+                                    <label class="demostar">&#9733;</label>
                                 </div>
                                 <div>
-                                    <label class="review-star">&#9733;</label>
-                                    <label class="review-star">&#9733;</label>
-                                    <label class="review-star">&#9733;</label>
+                                    <label class="colrstar">&#9733;</label>
+                                    <label class="colrstar">&#9733;</label>
+                                    <label class="colrstar">&#9733;</label>
                                 </div>
                             </div>
 
