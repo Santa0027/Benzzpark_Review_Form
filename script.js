@@ -14,10 +14,10 @@ const form = document.getElementById('myform').addEventListener('submit', functi
         document.getElementById('loading').style.display = 'none';
 
         if (xhr.status === 200) {
-            document.getElementById('response').textContent = "Successfully submitted!";
+            document.getElementById('response').textContent = this.response;
             document.getElementById('myform').reset(); 
         } else {
-            document.getElementById('response').textContent = 'An error occurred while submitting the form.';
+            document.getElementById('response').textContent = this.respons;
         }
     };
 
