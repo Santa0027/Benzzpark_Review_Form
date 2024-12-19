@@ -155,7 +155,10 @@ if ($result->num_rows > 0) {
     echo "<p>No feedback records found.</p>";
 }
 
-
+echo '<form method="post" action="export_to_excel.php">
+    <button type="submit" name="export">Export to Excel</button>
+</form>
+';
 $conn->close();
 ?>
 

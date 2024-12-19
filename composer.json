@@ -1,5 +1,17 @@
 {
+    "name": "benzzparkvellore/benzzpark_review_form",
+    "autoload": {
+        "psr-4": {
+            "Benzzparkvellore\\BenzzparkReviewForm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "santa0027",
+            "email": "vjsanthakumar@gmail.com"
+        }
+    ],
     "require": {
-        "phpmailer/phpmailer": "^6.9"
+        "phpoffice/phpspreadsheet": "^2.1"
     }
 }
