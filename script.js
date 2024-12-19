@@ -25,20 +25,67 @@ const form = document.getElementById('myform').addEventListener('submit', functi
 });
 
 
-const stars = document.querySelectorAll('.star');
-const radios = document.querySelectorAll('input[type="radio"]');
+function handleStarClick(ratingName) {
+    const stars = document.querySelectorAll(`input[name="${ratingName}"]`);
+    const labels = document.querySelectorAll(`input[name="${ratingName}"] ~ label`);
 
-radios.forEach(radio => {
-    radio.addEventListener('change', () => {
-        // Remove 'checked' class from all stars
-        stars.forEach(star => {
-            star.classList.remove('checked');
+    stars.forEach((star, index) => {
+        star.addEventListener("click", function (event) {
+            console.log(`Star clicked: ID=${star.id}, Index=${index}, Value=${star.value}, Checked=${star.checked}`);
+
+            // If the clicked star is already checked
+            if (star.checked && star.dataset.checked === "true") {
+                // Uncheck the current star
+                star.checked = false;
+                console.log(`Unchecked: ID=${star.id}, Value=${star.value}`);
+
+                // Check the previous star if it exists
+                if (index > 0) {
+                    stars[index - 1].checked = true;
+                    console.log(`Decremented to: ID=${stars[index - 1].id}, Value=${stars[index - 1].value}`);
+                }
+
+                // Prevent default toggle behavior
+                event.preventDefault();
+            }
+
+            // Update the `data-checked` attribute for all stars
+            stars.forEach((s) => {
+                s.dataset.checked = s.checked ? "true" : "false";
+            });
+
+            // Update star colors dynamically
+            updateStarColors(stars, labels);
         });
+    });
+}
 
-        // Add 'checked' class to the stars based on the selected radio button
-        const index = Array.from(radios).indexOf(radio);
-        for (let i = 0; i <= index; i++) {
-            stars[i].classList.add('checked');
+// Function to dynamically update star colors
+function updateStarColors(stars, labels) {
+    stars.forEach((star, index) => {
+        if (star.checked) {
+            // Highlight current star and all previous stars
+            labels[index].style.color = "gold";
+            for (let i = 0; i < index; i++) {
+                labels[i].style.color = "gold";
+            }
+        } else {
+            // Reset color for unselected stars
+            labels[index].style.color = "#919082";
         }
     });
-});
+}
+
+// Apply the behavior to each rating group
+handleStarClick("ambience");
+handleStarClick("checkinout");
+handleStarClick("reservation");
+handleStarClick("food");
+handleStarClick("Quality");
+handleStarClick("Service");
+handleStarClick("Cleanliness");
+handleStarClick("Decor");
+handleStarClick("Air_Condition");
+handleStarClick("Supplies");
+handleStarClick("Comfort");
+handleStarClick("Fittings");

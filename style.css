@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Exo';
-    src: url(./asset/Exo-VariableFont_wght.ttf);
+    /* src: url(./asset/sagu_exora/Sagu\ Exora.ttf); */
+    src: url(./asset/SadanaSquare.ttf);
+    font-size: 8rem;
 }
 
 .main{
@@ -15,26 +17,36 @@ body{
     font-family: 'Exo';
 }
 
-.review-form{
-
-}
 
 
 
 @media only screen and (max-width : 768px) {
+
+    html{
+        padding: 0%;
+        margin: 0%;
+    }
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
     .main{
-        background-color: rgb(76, 191, 226);
+        /* background-color: rgb(76, 191, 226); */
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2)), url(./asset/background.webp);
+        background-size: cover;
+        align-items: center;
     }
 
     .review-form{
         font-family: 'Exo';
+        font-size: 1.3rem;
         height: 95vh;
         width: 95%;
-        background-color: rgb(255, 255, 255);
+        background: linear-gradient(rgb(255, 255, 255,0.8), rgba(255, 255, 255, 0.8));
         position:relative;
         left: 2.5%;
         top: 2%;
-        border: #000000 1px solid;
+        /* border: #000000 1px solid; */
         border-radius: 20px;
     }
     .main-form{
@@ -42,16 +54,18 @@ body{
     }
     
     .logo{
-        height: 6rem;
-        width: 15rem;
-        padding-bottom: 1rem;
+        height: 7rem;
+        width: 25rem;
+        /* padding-bottom: 1rem; */
         margin: auto;
             display: block;
+        object-fit:cover;
+        
     }
 
     
         .inputbox {
-            background-color: rgba(248, 248, 248, 0.3);
+            background-color: rgb(248, 248, 248);
             box-sizing: 1rem;
             color: black;
             padding: 10px;
@@ -76,18 +90,24 @@ body{
         flex-direction: row;
         justify-content:space-evenly;
         align-items: center;
-        margin-right: 10rem;
+        margin-right: 8rem;
     }
 
     .front-title{
         color: #1696d4;
-        font-size: 1rem;
+        font-size: 1.6rem;
         text-align: center;
+        
         width: auto !important;
         margin: auto;
         display: block;
         margin-top: 1rem;
         font-weight: bolder;
+        -webkit-text-stroke: 0.7px rgb(255, 255, 255);
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        
+    
     }
     .star-rating{
         display: flex;
@@ -102,8 +122,9 @@ body{
 
     .star {
         font-size: 30px;
-        color: #919082;
+        color: #3c3e3f7e;
         cursor: pointer;
+        /* -webkit-text-stroke: 0.9px rgb(160, 198, 233); */
     }
 
     .review-star{
@@ -117,25 +138,33 @@ body{
         height: 2rem;
         width: 2rem;
     }
-    input[type=radio]:checked + .star {
-        color: rgb(255, 217, 0); /* Color for selected stars */
+    /* input[type=radio]:checked + .star {
+        color: rgb(255, 217, 0);
     }
     
-    /* Color all stars to the right when one is selected */
+ 
     input[type=radio]:checked ~ .star {
-        color: rgb(255, 217, 0); /* Color for checked stars */
+        color: rgb(255, 217, 0);
+    } */
+    /* .ambience{
+        margin-top: 1rem;
     }
-    
+*/
+    /* .check-in-out{
+        margin-top: 1rem;
+    }  */
+
 
     .flexdefault{
         height: auto;
         width: 100%;
         justify-content: space-between;
-        align-items: center;
+        margin-left: 1.5rem;
     }
 
     .firsthalf{
-        width: 45%;
+        width: 50%;
+        
 
 
     }
@@ -147,16 +176,18 @@ body{
             margin: auto;
             display: block;
             margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: bolder;
+        -webkit-text-stroke: 0.7px rgb(255, 255, 255);
+        letter-spacing: 2px;
     }
     .rowre{
-        width: 40%;
+        width: 45%;
         padding: 0%;
         gap: 0.25rem;
         margin: 0%;
         display: flex;
-        flex-direction:row-reverse;
+        /* flex-direction:row-reverse; */
 
     }
 
@@ -167,11 +198,13 @@ body{
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 1rem;
+        margin-left: 1.7rem;
+        /* width: 99%; */
     }
 
     .row2c1{
-        width: 45%;
-        /* margin-left: 1rem; */
+        width: 50%;
+        margin-left: 0.2rem;
         margin-top: 1rem;
         flex-wrap: wrap;
     }
@@ -201,8 +234,8 @@ body{
     }
 
     .row2c2{
-        width: 34.6%;
-        margin-right: 1rem;
+        width: 45%;
+        margin-right: 0.7rem;
         margin-top: 1rem;
     }
 
@@ -235,20 +268,15 @@ body{
         margin-left:40%;
         margin-top: 2rem;
     }  */
-
-     /* .food-beverage-rating{
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-        height: 2.5rem;
-        margin-top: 0.5rem;
-        padding-left: 0.6rem;
-        gap: 2rem;
+/* 
+     .food-beverage-rating{
+        margin-top: 1rem;
         
     }  */
 
     .row3{
-       margin-right: 1rem;
+       /* margin-right: 1rem; */
+       width: 45%;
     }
 /* 
     .food-beverage-rating{
@@ -295,9 +323,11 @@ body{
     .choice {
         display: flex;
         flex-direction: row; /* Stack radio buttons vertically */
-        justify-content:space-around ;
+        justify-content:space-between;
         margin-bottom: 1rem;
         margin-top: 1rem;
+        margin-left:5.5rem;
+        
     }
     
     .choice input[type="radio"] {
@@ -332,24 +362,28 @@ body{
 
     .choose{
         color: #1696d4;
-        padding-left: 9.5rem;
+        padding-left: 10rem;
         padding-top: 0.5rem;
         /* width: 50%; */
         margin: auto;
         display: block;
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: bolder;
+        -webkit-text-stroke: 0.7px rgb(255, 255, 255);
+        letter-spacing: 2px;
     }
 
     .purpose{
         color: #1696d4;
         font-weight: bolder;
-        padding-left: 12rem;
+        padding-left: 13rem;
         padding-top: 0.5rem;
         /* width: 29%; */
             margin: auto;
             display: block;
-            font-size: 1rem;
+            font-size: 1.6rem;
+            -webkit-text-stroke: 0.7px rgb(255, 255, 255);
+            letter-spacing: 2px;
 
     }
 
@@ -452,7 +486,7 @@ body{
     -webkit-user-select: none;
     vertical-align: middle;
     margin-left: 4rem;
-    margin-bottom: 9rem;
+    /* margin-bottom: 9rem; */
     }
 
     .button-18:hover,
@@ -479,13 +513,13 @@ body{
     }
     .document{
         width: 25%;
-        padding-top: 1rem;
-        padding-left: 4rem;
+        padding-top: 0.5rem;
+        padding-left: 2.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 0.5rem;
-        height: 4rem;
+        /* margin-top: 0.5rem; */
+        /* height: 4rem; */
 
     }
 
@@ -504,10 +538,10 @@ body{
 
     .submitdiv{
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        margin-top: 1rem;
+        flex-direction: row;
+       position: absolute;
+       margin-left: 8rem;
+       padding-top: 3rem;
     }
 
 
@@ -517,16 +551,20 @@ body{
 
 
     .demostar{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: #919082;
     }
     .colrstar{
         color: rgb(255, 217, 0);
-        font-size:1.2rem ;
+        font-size:1.4rem ;
     }
     .star1{
         padding-top: 0.5rem;
 
+    }
+    span{
+        padding: 0%;
+        margin: 0%;
     }
 }
 
